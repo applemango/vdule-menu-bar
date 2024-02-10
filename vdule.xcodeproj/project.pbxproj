@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		18F388B02B77079C004F6BCB /* vduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388AF2B77079C004F6BCB /* vduleApp.swift */; };
-		18F388B22B77079C004F6BCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388B12B77079C004F6BCB /* ContentView.swift */; };
 		18F388B42B77079D004F6BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F388B32B77079D004F6BCB /* Assets.xcassets */; };
 		18F388B72B77079D004F6BCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F388B62B77079D004F6BCB /* Preview Assets.xcassets */; };
 		18F388C22B77079D004F6BCB /* vduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388C12B77079D004F6BCB /* vduleTests.swift */; };
 		18F388CC2B77079D004F6BCB /* vduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388CB2B77079D004F6BCB /* vduleUITests.swift */; };
 		18F388CE2B77079D004F6BCB /* vduleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388CD2B77079D004F6BCB /* vduleUITestsLaunchTests.swift */; };
+		18F388DB2B7708BC004F6BCB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388DA2B7708BC004F6BCB /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		18F388AC2B77079C004F6BCB /* vdule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vdule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F388AF2B77079C004F6BCB /* vduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleApp.swift; sourceTree = "<group>"; };
-		18F388B12B77079C004F6BCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18F388B32B77079D004F6BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F388B62B77079D004F6BCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18F388B82B77079D004F6BCB /* vdule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vdule.entitlements; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		18F388C72B77079D004F6BCB /* vduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F388CB2B77079D004F6BCB /* vduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleUITests.swift; sourceTree = "<group>"; };
 		18F388CD2B77079D004F6BCB /* vduleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		18F388DA2B7708BC004F6BCB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				18F388AF2B77079C004F6BCB /* vduleApp.swift */,
-				18F388B12B77079C004F6BCB /* ContentView.swift */,
 				18F388B32B77079D004F6BCB /* Assets.xcassets */,
 				18F388B82B77079D004F6BCB /* vdule.entitlements */,
 				18F388B52B77079D004F6BCB /* Preview Content */,
+				18F388DA2B7708BC004F6BCB /* MenuView.swift */,
 			);
 			path = vdule;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F388B22B77079C004F6BCB /* ContentView.swift in Sources */,
+				18F388DB2B7708BC004F6BCB /* MenuView.swift in Sources */,
 				18F388B02B77079C004F6BCB /* vduleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +422,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"vdule/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,6 +448,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"vdule/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
