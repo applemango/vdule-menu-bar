@@ -41,6 +41,39 @@ struct Schedule: Codable {
 struct RawResponseSchedule: Codable {
     var videos: [Schedule]
 }
+
+class LoadSchedule: ObservableObject {
+    @Published var schedules = [Schedule]()
+    func get() {
+        guard let url = URL(string: "http://127.0.0.1:8081/schedule") else {
+            print("Error: Invalid URL")
+            return
+        }
+        URLSession.shared.dataTask(with: url) { (res, _, err) in
+            if let e = err {
+                print("Error: \(e.localizedDescription)")
+                return
+            }
+            guard let res = res else {
+                print("Error: Invalid data")
+                return
+            }
+            do {
+                let decoder = JSONDecoder()
+                let raw = try decoder.decode(RawResponseSchedule.self, from: res)
+                DispatchQueue.main.async {
+                    self.schedules = raw.videos
+                }
+            } catch let e {
+                print("Error: \(e.localizedDescription)")
+            }
+        }.resume()
+    }
+    init() {
+        self.get()
+    }
+}
+
 @main
 struct vduleApp: App {
     var body: some Scene {
