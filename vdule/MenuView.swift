@@ -12,7 +12,6 @@ import SwiftUI
 struct MenuView: View {
     @ObservedObject var loader: LoadSchedule
     @Environment(\.openURL) private var openURL
-    /*let imageUrl = URL(string: "https://s2.i32.jp/679fe1a3-c7cc-429c-a5f2-4d9fac76ce10")*/
     var body: some View {
         let util = ScheduleUtils(schedules: loader.schedules)
         let schedules = util.getEventAfter()
@@ -47,7 +46,6 @@ struct MenuView: View {
                     Text(title)
                 }
             }.keyboardShortcut(keys[index], modifiers: [.option])
-            /*Link(title, destination: URL(string: "https://www.youtube.com/watch?v=\(s.id)")!)*/
         }
         Divider()
         Label("Website and settings", systemImage: "")
@@ -56,7 +54,7 @@ struct MenuView: View {
                 Image(systemName: "gearshape")
                 Text("Settings")
             }
-        }.keyboardShortcut("s")
+        }.keyboardShortcut(",")
         Button(action: {
             if let url = URL(string: "http://127.0.0.1:3001") {
                 openURL(url)
@@ -67,20 +65,14 @@ struct MenuView: View {
                 Text("Website")
             }
         }.keyboardShortcut("o")
-        /*Button("Settings"){
-            
-        }.keyboardShortcut("s")*/
-        /*AsyncImage(url: imageUrl) { image in
-            image.resizable()
-        } placeholder: {
-            ProgressView()
-        }.frame(width: 640, height: 478).id(imageUrl)*/
-        //Text("Hello, Swift!")
+        Divider()
+        Button(action: {
+            NSApplication.shared.terminate(nil)
+        }) {
+            HStack {
+                Image(systemName: "delete.forward")
+                Text("Quit")
+            }
+        }.keyboardShortcut("q")
     }
 }
-
-/*struct MenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuView()
-    }
-}*/
