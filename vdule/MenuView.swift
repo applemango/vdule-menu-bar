@@ -45,7 +45,7 @@ struct MenuView: View {
                     }.frame(width: 30, height: 30).id(imageUrl)
                     Text(title)
                 }
-            }.keyboardShortcut(keys[index], modifiers: [.option])
+            }.keyboardShortcut(index>9 ?"-":keys[index], modifiers: [.option])
         }
         Divider()
         Label("Website and settings", systemImage: "")
