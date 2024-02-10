@@ -7,41 +7,6 @@
 
 import SwiftUI
 
-struct Channel: Codable {
-    var id: String
-    var name: String
-    var description: String
-    var handle: String
-    var publish_at: String
-    var icon_image: String
-    var uploads_playlist: String
-    var view_count: Int
-    var subscriber_count: Int
-    var video_count: Int
-    var trailer: String
-    var banner_image: String
-}
-
-struct ScheduleDate: Codable {
-    var year: Int
-    var month: Int
-    var day: Int
-    var hour: Int? = 0
-    var minute: Int? = 0
-}
-
-struct Schedule: Codable {
-    var id: String
-    var title: String
-    var thumbnail: String
-    var date: ScheduleDate
-    var channel: Channel
-}
-
-struct RawResponseSchedule: Codable {
-    var videos: [Schedule]
-}
-
 class LoadSchedule: ObservableObject {
     @Published var schedules = [Schedule]()
     func get() {
@@ -70,15 +35,74 @@ class LoadSchedule: ObservableObject {
         }.resume()
     }
     init() {
-        self.get()
+        let _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {time in
+            self.get()
+        })
     }
+}
+
+class ScheduleUtils: ObservableObject {
+    @Published var schedules = [Schedule]()
+    func getSchedules() -> [Schedule] {
+        return self.schedules
+    }
+    func getSortedSchedule() -> [Schedule] {
+        return quickSort(arr: getSchedules()) { a, b in
+            return a.date.hour ?? 0 < b.date.hour ?? 0
+        }
+    }
+    func filterSchedule(hour: Int) -> [Schedule] {
+        return getSchedules().filter { s in
+            return s.date.hour ?? -1 > hour
+        }
+    }
+    func getRecentEvent(hour: Int) -> Schedule? {
+        let res = filterSchedule(hour: hour)
+        if res.count == 0 {
+            return nil
+        }
+        return filterSchedule(hour: hour)[0]
+    }
+    func getRecentEvent() -> Schedule? {
+        let hour = Calendar.current.component(.hour, from: Date())
+        return getRecentEvent(hour: hour)
+    }
+    init(schedules: [Schedule] = [Schedule]()) {
+        self.schedules = schedules
+    }
+}
+
+func getRelativeScheduleDateLabel(date: ScheduleDate) -> String {
+    let n_hour = Calendar.current.component(.hour, from: Date())
+    let n_minute = Calendar.current.component(.minute, from: Date())
+    let startTime = DateComponents(hour: n_hour, minute: n_minute)
+    let endTime = DateComponents(hour: date.hour, minute: date.minute)
+    let startDate = Calendar.current.date(from: startTime)!
+    let endDate = Calendar.current.date(from: endTime)!
+    let components = Calendar.current.dateComponents([.hour, .minute], from: startDate, to: endDate)
+    let hour = components.hour!
+    let minute = components.minute!
+    return "\(hour)時間\(minute)分"
+
+}
+
+func getLiveTitle(schedule: Schedule) -> String {
+    return "\(schedule.channel.name)･あと\(getRelativeScheduleDateLabel(date: schedule.date))"
 }
 
 @main
 struct vduleApp: App {
+    @ObservedObject var loader = LoadSchedule()
+    @AppStorage("hide") private var hide = true
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        let util = ScheduleUtils(schedules: loader.schedules)
+        let live = util.getRecentEvent()
+        let title = live == nil ? "ライブはありません" : getLiveTitle(schedule: live!)
+    
+        MenuBarExtra(isInserted: $hide) {
+            MenuView(loader: loader)
+        } label: {
+            Text(title)
         }
     }
 }
