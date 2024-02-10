@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18F388B02B77079C004F6BCB /* vduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388AF2B77079C004F6BCB /* vduleApp.swift */; };
+		18F388B22B77079C004F6BCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388B12B77079C004F6BCB /* ContentView.swift */; };
+		18F388B42B77079D004F6BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F388B32B77079D004F6BCB /* Assets.xcassets */; };
+		18F388B72B77079D004F6BCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F388B62B77079D004F6BCB /* Preview Assets.xcassets */; };
+		18F388C22B77079D004F6BCB /* vduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388C12B77079D004F6BCB /* vduleTests.swift */; };
+		18F388CC2B77079D004F6BCB /* vduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388CB2B77079D004F6BCB /* vduleUITests.swift */; };
+		18F388CE2B77079D004F6BCB /* vduleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388CD2B77079D004F6BCB /* vduleUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F388BE2B77079D004F6BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F388A42B77079C004F6BCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F388AB2B77079C004F6BCB;
+			remoteInfo = vdule;
+		};
+		18F388C82B77079D004F6BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F388A42B77079C004F6BCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18F388AB2B77079C004F6BCB;
+			remoteInfo = vdule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18F388AC2B77079C004F6BCB /* vdule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vdule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F388AF2B77079C004F6BCB /* vduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleApp.swift; sourceTree = "<group>"; };
+		18F388B12B77079C004F6BCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18F388B32B77079D004F6BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F388B62B77079D004F6BCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18F388B82B77079D004F6BCB /* vdule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vdule.entitlements; sourceTree = "<group>"; };
+		18F388BD2B77079D004F6BCB /* vduleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vduleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F388C12B77079D004F6BCB /* vduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleTests.swift; sourceTree = "<group>"; };
+		18F388C72B77079D004F6BCB /* vduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F388CB2B77079D004F6BCB /* vduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleUITests.swift; sourceTree = "<group>"; };
+		18F388CD2B77079D004F6BCB /* vduleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F388A92B77079C004F6BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F388BA2B77079D004F6BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F388C42B77079D004F6BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18F388A32B77079C004F6BCB = {
+			isa = PBXGroup;
+			children = (
+				18F388AE2B77079C004F6BCB /* vdule */,
+				18F388C02B77079D004F6BCB /* vduleTests */,
+				18F388CA2B77079D004F6BCB /* vduleUITests */,
+				18F388AD2B77079C004F6BCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18F388AD2B77079C004F6BCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F388AC2B77079C004F6BCB /* vdule.app */,
+				18F388BD2B77079D004F6BCB /* vduleTests.xctest */,
+				18F388C72B77079D004F6BCB /* vduleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F388AE2B77079C004F6BCB /* vdule */ = {
+			isa = PBXGroup;
+			children = (
+				18F388AF2B77079C004F6BCB /* vduleApp.swift */,
+				18F388B12B77079C004F6BCB /* ContentView.swift */,
+				18F388B32B77079D004F6BCB /* Assets.xcassets */,
+				18F388B82B77079D004F6BCB /* vdule.entitlements */,
+				18F388B52B77079D004F6BCB /* Preview Content */,
+			);
+			path = vdule;
+			sourceTree = "<group>";
+		};
+		18F388B52B77079D004F6BCB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18F388B62B77079D004F6BCB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18F388C02B77079D004F6BCB /* vduleTests */ = {
+			isa = PBXGroup;
+			children = (
+				18F388C12B77079D004F6BCB /* vduleTests.swift */,
+			);
+			path = vduleTests;
+			sourceTree = "<group>";
+		};
+		18F388CA2B77079D004F6BCB /* vduleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F388CB2B77079D004F6BCB /* vduleUITests.swift */,
+				18F388CD2B77079D004F6BCB /* vduleUITestsLaunchTests.swift */,
+			);
+			path = vduleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F388AB2B77079C004F6BCB /* vdule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F388D12B77079D004F6BCB /* Build configuration list for PBXNativeTarget "vdule" */;
+			buildPhases = (
+				18F388A82B77079C004F6BCB /* Sources */,
+				18F388A92B77079C004F6BCB /* Frameworks */,
+				18F388AA2B77079C004F6BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vdule;
+			productName = vdule;
+			productReference = 18F388AC2B77079C004F6BCB /* vdule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18F388BC2B77079D004F6BCB /* vduleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F388D42B77079D004F6BCB /* Build configuration list for PBXNativeTarget "vduleTests" */;
+			buildPhases = (
+				18F388B92B77079D004F6BCB /* Sources */,
+				18F388BA2B77079D004F6BCB /* Frameworks */,
+				18F388BB2B77079D004F6BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F388BF2B77079D004F6BCB /* PBXTargetDependency */,
+			);
+			name = vduleTests;
+			productName = vduleTests;
+			productReference = 18F388BD2B77079D004F6BCB /* vduleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18F388C62B77079D004F6BCB /* vduleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F388D72B77079D004F6BCB /* Build configuration list for PBXNativeTarget "vduleUITests" */;
+			buildPhases = (
+				18F388C32B77079D004F6BCB /* Sources */,
+				18F388C42B77079D004F6BCB /* Frameworks */,
+				18F388C52B77079D004F6BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F388C92B77079D004F6BCB /* PBXTargetDependency */,
+			);
+			name = vduleUITests;
+			productName = vduleUITests;
+			productReference = 18F388C72B77079D004F6BCB /* vduleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F388A42B77079C004F6BCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					18F388AB2B77079C004F6BCB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					18F388BC2B77079D004F6BCB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 18F388AB2B77079C004F6BCB;
+					};
+					18F388C62B77079D004F6BCB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 18F388AB2B77079C004F6BCB;
+					};
+				};
+			};
+			buildConfigurationList = 18F388A72B77079C004F6BCB /* Build configuration list for PBXProject "vdule" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F388A32B77079C004F6BCB;
+			productRefGroup = 18F388AD2B77079C004F6BCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F388AB2B77079C004F6BCB /* vdule */,
+				18F388BC2B77079D004F6BCB /* vduleTests */,
+				18F388C62B77079D004F6BCB /* vduleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F388AA2B77079C004F6BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F388B72B77079D004F6BCB /* Preview Assets.xcassets in Resources */,
+				18F388B42B77079D004F6BCB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F388BB2B77079D004F6BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F388C52B77079D004F6BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F388A82B77079C004F6BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F388B22B77079C004F6BCB /* ContentView.swift in Sources */,
+				18F388B02B77079C004F6BCB /* vduleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F388B92B77079D004F6BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F388C22B77079D004F6BCB /* vduleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F388C32B77079D004F6BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F388CC2B77079D004F6BCB /* vduleUITests.swift in Sources */,
+				18F388CE2B77079D004F6BCB /* vduleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F388BF2B77079D004F6BCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F388AB2B77079C004F6BCB /* vdule */;
+			targetProxy = 18F388BE2B77079D004F6BCB /* PBXContainerItemProxy */;
+		};
+		18F388C92B77079D004F6BCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18F388AB2B77079C004F6BCB /* vdule */;
+			targetProxy = 18F388C82B77079D004F6BCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18F388CF2B77079D004F6BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18F388D02B77079D004F6BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		18F388D22B77079D004F6BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = vdule/vdule.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vdule/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = i32.jp.vdule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18F388D32B77079D004F6BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = vdule/vdule.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vdule/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = i32.jp.vdule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		18F388D52B77079D004F6BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = i32.jp.vduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vdule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vdule";
+			};
+			name = Debug;
+		};
+		18F388D62B77079D004F6BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = i32.jp.vduleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vdule.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vdule";
+			};
+			name = Release;
+		};
+		18F388D82B77079D004F6BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = i32.jp.vduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = vdule;
+			};
+			name = Debug;
+		};
+		18F388D92B77079D004F6BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = i32.jp.vduleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = vdule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F388A72B77079C004F6BCB /* Build configuration list for PBXProject "vdule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F388CF2B77079D004F6BCB /* Debug */,
+				18F388D02B77079D004F6BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F388D12B77079D004F6BCB /* Build configuration list for PBXNativeTarget "vdule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F388D22B77079D004F6BCB /* Debug */,
+				18F388D32B77079D004F6BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F388D42B77079D004F6BCB /* Build configuration list for PBXNativeTarget "vduleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F388D52B77079D004F6BCB /* Debug */,
+				18F388D62B77079D004F6BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F388D72B77079D004F6BCB /* Build configuration list for PBXNativeTarget "vduleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F388D82B77079D004F6BCB /* Debug */,
+				18F388D92B77079D004F6BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18F388A42B77079C004F6BCB /* Project object */;
+}
