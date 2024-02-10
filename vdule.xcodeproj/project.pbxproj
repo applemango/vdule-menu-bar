@@ -14,6 +14,8 @@
 		18F388CC2B77079D004F6BCB /* vduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388CB2B77079D004F6BCB /* vduleUITests.swift */; };
 		18F388CE2B77079D004F6BCB /* vduleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388CD2B77079D004F6BCB /* vduleUITestsLaunchTests.swift */; };
 		18F388DB2B7708BC004F6BCB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388DA2B7708BC004F6BCB /* MenuView.swift */; };
+		18F388DD2B77317F004F6BCB /* quicksort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388DC2B77317F004F6BCB /* quicksort.swift */; };
+		18F388DF2B7731B2004F6BCB /* struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388DE2B7731B2004F6BCB /* struct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		18F388CB2B77079D004F6BCB /* vduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleUITests.swift; sourceTree = "<group>"; };
 		18F388CD2B77079D004F6BCB /* vduleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		18F388DA2B7708BC004F6BCB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		18F388DC2B77317F004F6BCB /* quicksort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = quicksort.swift; sourceTree = "<group>"; };
+		18F388DE2B7731B2004F6BCB /* struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = struct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				18F388B82B77079D004F6BCB /* vdule.entitlements */,
 				18F388B52B77079D004F6BCB /* Preview Content */,
 				18F388DA2B7708BC004F6BCB /* MenuView.swift */,
+				18F388DC2B77317F004F6BCB /* quicksort.swift */,
+				18F388DE2B7731B2004F6BCB /* struct.swift */,
 			);
 			path = vdule;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F388DF2B7731B2004F6BCB /* struct.swift in Sources */,
 				18F388DB2B7708BC004F6BCB /* MenuView.swift in Sources */,
 				18F388B02B77079C004F6BCB /* vduleApp.swift in Sources */,
+				18F388DD2B77317F004F6BCB /* quicksort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
