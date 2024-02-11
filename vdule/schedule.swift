@@ -35,7 +35,7 @@ class LoadSchedule: ObservableObject {
         }.resume()
     }
     init() {
-        let _ = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {time in
+        let _ = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: {time in
             print(Date())
             self.get()
         })
