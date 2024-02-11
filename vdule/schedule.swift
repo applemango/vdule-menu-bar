@@ -35,6 +35,7 @@ class LoadSchedule: ObservableObject {
         }.resume()
     }
     init() {
+        self.get()
         let _ = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: {time in
             print(Date())
             self.get()
@@ -90,11 +91,14 @@ func getRelativeScheduleDateLabel(date: ScheduleDate) -> String {
     let endDate = Calendar.current.date(from: endTime)!
     let components = Calendar.current.dateComponents([.hour, .minute], from: startDate, to: endDate)
     let hour = components.hour!
+    let h = abs(hour)
     let minute = components.minute!
-    return "\(hour>0 ? String(hour):"")\(hour>0 ? "時間":"")\(minute)分"
+    let m = abs(minute)
+    let b = hour < 0 || minute < 0
+    return "\(!b ?"あと":"")\(hour==0 ? "":String(h))\(hour==0 ? "":"時間")\(m)分\(b ?"前":"")"
 
 }
 
 func getLiveTitle(schedule: Schedule) -> String {
-    return "\(schedule.channel.name)･あと\(getRelativeScheduleDateLabel(date: schedule.date))"
+    return "\(schedule.channel.name)･\(getRelativeScheduleDateLabel(date: schedule.date))"
 }
