@@ -56,6 +56,11 @@ class ScheduleUtils: ObservableObject {
     func getSortedSchedule() -> [Schedule] {
         return getSortedSchedule(schedules: getSchedules())
     }
+    func filterNowOnAir() -> [Schedule] {
+        return getSchedules().filter { s in
+            return s.is_now_on_air ?? false
+        }
+    }
     func filterSchedule(hour: Int) -> [Schedule] {
         return getSchedules().filter { s in
             return s.date.hour ?? -1 > hour
@@ -82,7 +87,11 @@ class ScheduleUtils: ObservableObject {
     }
 }
 
-func getRelativeScheduleDateLabel(date: ScheduleDate) -> String {
+func getRelativeScheduleDateLabel(schedule: Schedule) -> String {
+    if schedule.is_now_on_air ?? false {
+        return "配信中"
+    }
+    let date = schedule.date
     let n_hour = Calendar.current.component(.hour, from: Date())
     let n_minute = Calendar.current.component(.minute, from: Date())
     let startTime = DateComponents(hour: n_hour, minute: n_minute)
@@ -100,5 +109,5 @@ func getRelativeScheduleDateLabel(date: ScheduleDate) -> String {
 }
 
 func getLiveTitle(schedule: Schedule) -> String {
-    return "\(schedule.channel.name)･\(getRelativeScheduleDateLabel(date: schedule.date))"
+    return "\(schedule.channel.name)･\(getRelativeScheduleDateLabel(schedule: schedule))"
 }

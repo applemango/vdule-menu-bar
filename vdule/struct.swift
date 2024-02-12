@@ -36,6 +36,7 @@ struct Schedule: Codable {
     var thumbnail: String
     var date: ScheduleDate
     var channel: Channel
+    var is_now_on_air: Bool? = false
 }
 
 struct RawResponseSchedule: Codable {

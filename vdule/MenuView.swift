@@ -14,7 +14,7 @@ struct MenuView: View {
     @Environment(\.openURL) private var openURL
     var body: some View {
         let util = ScheduleUtils(schedules: loader.schedules)
-        let schedules = util.getEventAfter()
+        let schedules = util.filterNowOnAir() + util.getEventAfter()
         Label("Live Schedule", systemImage: "")
         ForEach((0..<schedules.count), id: \.self) { index in
             let s = schedules[index]
