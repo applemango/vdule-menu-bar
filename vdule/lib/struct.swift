@@ -42,3 +42,22 @@ struct Schedule: Codable {
 struct RawResponseSchedule: Codable {
     var videos: [Schedule]
 }
+
+
+struct VtuberTag: Codable {
+    var id: Int
+    var name: String
+}
+struct VtuberOrganization: Codable {
+    var id: Int
+    var name: String
+    var description: String? = ""
+}
+struct Vtuber: Codable {
+    var id: Int
+    var channel: Channel
+    var handle: String
+    var tags: [VtuberTag]
+    var name: String
+    var organization: VtuberOrganization? = nil
+}
