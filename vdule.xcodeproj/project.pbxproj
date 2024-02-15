@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1868EBFE2B7E350200038877 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868EBFD2B7E350200038877 /* SettingsView.swift */; };
+		1868EC042B7E3E5500038877 /* vtuber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868EC032B7E3E5500038877 /* vtuber.swift */; };
 		18F388B02B77079C004F6BCB /* vduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F388AF2B77079C004F6BCB /* vduleApp.swift */; };
 		18F388B42B77079D004F6BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F388B32B77079D004F6BCB /* Assets.xcassets */; };
 		18F388B72B77079D004F6BCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F388B62B77079D004F6BCB /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		1868EBFD2B7E350200038877 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1868EC032B7E3E5500038877 /* vtuber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vtuber.swift; sourceTree = "<group>"; };
 		18F388AC2B77079C004F6BCB /* vdule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vdule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F388AF2B77079C004F6BCB /* vduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vduleApp.swift; sourceTree = "<group>"; };
 		18F388B32B77079D004F6BCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				18F388E02B77616B004F6BCB /* schedule.swift */,
 				18F388DE2B7731B2004F6BCB /* struct.swift */,
 				18F388DC2B77317F004F6BCB /* quicksort.swift */,
+				1868EC032B7E3E5500038877 /* vtuber.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				18F388DF2B7731B2004F6BCB /* struct.swift in Sources */,
 				18F388DB2B7708BC004F6BCB /* MenuView.swift in Sources */,
 				18F388B02B77079C004F6BCB /* vduleApp.swift in Sources */,
+				1868EC042B7E3E5500038877 /* vtuber.swift in Sources */,
 				1868EBFE2B7E350200038877 /* SettingsView.swift in Sources */,
 				18F388E12B77616B004F6BCB /* schedule.swift in Sources */,
 				18F388DD2B77317F004F6BCB /* quicksort.swift in Sources */,

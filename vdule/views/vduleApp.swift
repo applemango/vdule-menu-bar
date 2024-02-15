@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct vduleApp: App {
     @ObservedObject var loader = LoadSchedule()
+    @ObservedObject var loaderVtuber = LoadVtuber()
     @AppStorage("hide") private var hide = true
     var body: some Scene {
         let util = ScheduleUtils(schedules: loader.schedules)
@@ -21,6 +22,6 @@ struct vduleApp: App {
         } label: {
             Text(title)
         }
-        Settings { SettingsView() }
+        Settings { SettingsView(loader: loaderVtuber) }
     }
 }

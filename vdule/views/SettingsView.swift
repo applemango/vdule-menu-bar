@@ -10,15 +10,18 @@ import SwiftUI
 
 struct SettingsView: View {
     @AppStorage("filterVtubers") var filterVtubers: Bool = false
+    @ObservedObject var loader: LoadVtuber
     var body: some View {
+        let vtubers = loader.vtubers
+        let _ = print(vtubers.count)
         TabView {
             Form {
                 Section(header: Text("Subscribe Vtubers")) {
                     Toggle("Filter Vtuber", isOn: $filterVtubers)
                     List {
-                        Toggle("Filter Vtuber Not working", isOn: $filterVtubers)
-                        Toggle("Filter Vtuber Not working", isOn: $filterVtubers)
-                        Toggle("Filter Vtuber Not working", isOn: $filterVtubers)
+                        ForEach(vtubers, id: \.id) { vtuber in
+                            Toggle(vtuber.name, isOn: $filterVtubers)
+                        }
                     }
                 }
             }.padding(8).tabItem {Label("General", systemImage: "gearshape")}
