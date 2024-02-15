@@ -21,5 +21,6 @@ struct vduleApp: App {
         } label: {
             Text(title)
         }
+        Settings { SettingsView() }
     }
 }

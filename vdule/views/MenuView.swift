@@ -50,6 +50,8 @@ struct MenuView: View {
         Divider()
         Label("Website and settings", systemImage: "")
         Button(action: {
+            NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+            NSApp.activate(ignoringOtherApps: true)
         }) {
             HStack {
                 Image(systemName: "gearshape")
