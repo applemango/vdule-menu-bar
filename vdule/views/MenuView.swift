@@ -49,7 +49,8 @@ struct MenuView: View {
         }
         Divider()
         Label("Website and settings", systemImage: "")
-        Button(action: {}) {
+        Button(action: {
+        }) {
             HStack {
                 Image(systemName: "gearshape")
                 Text("Settings")

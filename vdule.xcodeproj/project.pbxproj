@@ -78,6 +78,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1868EBFF2B7E399500038877 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1868EBFD2B7E350200038877 /* SettingsView.swift */,
+				18F388AF2B77079C004F6BCB /* vduleApp.swift */,
+				18F388DA2B7708BC004F6BCB /* MenuView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1868EC002B7E39AB00038877 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				18F388E02B77616B004F6BCB /* schedule.swift */,
+				18F388DE2B7731B2004F6BCB /* struct.swift */,
+				18F388DC2B77317F004F6BCB /* quicksort.swift */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		18F388A32B77079C004F6BCB = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +121,11 @@
 		18F388AE2B77079C004F6BCB /* vdule */ = {
 			isa = PBXGroup;
 			children = (
-				18F388AF2B77079C004F6BCB /* vduleApp.swift */,
+				1868EC002B7E39AB00038877 /* lib */,
+				1868EBFF2B7E399500038877 /* views */,
 				18F388B32B77079D004F6BCB /* Assets.xcassets */,
 				18F388B82B77079D004F6BCB /* vdule.entitlements */,
 				18F388B52B77079D004F6BCB /* Preview Content */,
-				18F388DA2B7708BC004F6BCB /* MenuView.swift */,
-				18F388DC2B77317F004F6BCB /* quicksort.swift */,
-				18F388DE2B7731B2004F6BCB /* struct.swift */,
-				18F388E02B77616B004F6BCB /* schedule.swift */,
 			);
 			path = vdule;
 			sourceTree = "<group>";
