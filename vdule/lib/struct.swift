@@ -33,7 +33,7 @@ struct ScheduleDate: Codable {
 struct Schedule: Codable {
     var id: String
     var title: String
-    var thumbnail: String
+    var thumbnail: String? = ""
     var date: ScheduleDate
     var channel: Channel
     var is_now_on_air: Bool? = false
